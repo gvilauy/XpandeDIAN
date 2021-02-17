@@ -10,10 +10,8 @@ package oasis.names.specification.ubl.schema.xsd.attacheddocument_2;
 
 import java.util.ArrayList;
 import java.util.List;
-import javax.xml.bind.annotation.XmlAccessType;
-import javax.xml.bind.annotation.XmlAccessorType;
-import javax.xml.bind.annotation.XmlElement;
-import javax.xml.bind.annotation.XmlType;
+import javax.xml.bind.annotation.*;
+
 import oasis.names.specification.ubl.schema.xsd.commonaggregatecomponents_2.AttachmentType;
 import oasis.names.specification.ubl.schema.xsd.commonaggregatecomponents_2.LineReferenceType;
 import oasis.names.specification.ubl.schema.xsd.commonaggregatecomponents_2.PartyType;
@@ -87,6 +85,7 @@ import oasis.names.specification.ubl.schema.xsd.commonextensioncomponents_2.UBLE
  * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
+@XmlRootElement(name="AttachedDocument") // Xpande. Agregada para que no de error el unmarshaller
 @XmlType(name = "AttachedDocumentType", propOrder = {
     "ublExtensions",
     "ublVersionID",
